@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\Telephone;
 
 class AdminController extends Controller
 {
     public function index()
     {
-        return 'admin';
+        $data = Telephone::select('telnumber')->get();
+        // dd($data);
+        return view('admin.panel', ['phones' => $data]);
     }
 }

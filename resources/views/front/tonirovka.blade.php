@@ -8,6 +8,11 @@
     <div class="article-name">
         <h1>ТОНИРОВКА АВТОМОБИЛЯ</h1>
     </div>
+    @if(session('status'))
+        <div class="tel-status">
+            <p>Мы получили Ваш номер телефона, ожидайте обратной связи</p>
+        </div>
+    @endif
     <div class="article-brands">
         <img src="{{ asset('images/brands/UltraVision.png') }}">
         <img src="{{ asset('images/brands/xpel.png') }}">
@@ -49,10 +54,10 @@
         </section>
     </article>
     <div class="client-form">
-        <span>Оставьте свой номер и мы Вам перезвоним</span>
+        <span>Оставьте Ваш номер и мы обязательно перезвоним</span>
         <form action="/" method="post">
             @csrf
-            <input type="tel" name="tel" id="tel">
+            <input type="tel" name="tel" id="tel" placeholder="Введите номер...">
             <input type="submit" value="OK">
         </form>
     </div>

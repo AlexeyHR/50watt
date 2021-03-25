@@ -7,8 +7,18 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('front.tonirovka');
-});
+})->name('index');
 
 Route::post('/', [ClientController::class, 'someAction']);
 
-Route::post('/admin', [AdminController::class, 'index']);
+
+Route::get('/admin', [AdminController::class, 'index']);
+
+
+Route::get('/fox', function() { 
+    return 'Quick brown fox jumps over lazy dog';
+});
+
+// Route::get('/admin/delete-number/{id}', function($id) { 
+//     return 'Quick brown fox jumps over lazy dog';
+// });

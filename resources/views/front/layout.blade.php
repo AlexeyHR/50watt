@@ -20,14 +20,14 @@
                 <li><a href="tel:0996693510">099-669-35-10</a></li>
             </ul>
         </div>
-        <nav>
+        <!-- <nav>
             <ul class="menu">
                 <li><a href="/">Главная</a></li>
                 <li><a href="/">Услуги</a></li>
                 <li><a href="/">О нас</a></li>
                 <li><a href="/">Контакты</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
 
     <main>
