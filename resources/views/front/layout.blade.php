@@ -35,7 +35,17 @@
     </main>
 
     <footer>
-        <!-- <form action="client-tel" method="post"></form> -->
+        <div class="client-form">
+            <span>Оставьте Ваш номер и мы обязательно перезвоним</span>
+            <form action="/" method="post">
+                @csrf
+                <input type="tel" name="tel" id="tel" placeholder="Введите номер телефона">
+                <input type="submit" value="OK">
+            </form>
+        </div>
+        <p>Наш адрес<br>
+            <b>Днепр, ул. Казака Мамая 41 (р-н 12 квартал)</b>
+        </p>
     </footer>
 </body>
 </html>
